@@ -2,6 +2,7 @@ import Navbar from './Navbar'
 import NewArraval from './NewArraval'
 import Pop from './Pop'
 import ProfilePage from './ProfilePage'
+import Topselling from './Topselling'
 
 function Homepage() {
   return (
@@ -10,6 +11,7 @@ function Homepage() {
       <Navbar/>
       <ProfilePage/>
       <NewArraval/>
+      <Topselling/>
     </div>
   )
 }
