@@ -2,7 +2,7 @@ function ProfilePage() {
     return (
         <>
 
-            <div className="relative bg-gray-300 max-w-360 mx-auto ">
+            <div className="relative light-gray max-w-360 mx-auto ">
                 <img
                     src="/img/Rectangle2.png"
                     alt="Fashion"
