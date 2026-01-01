@@ -3,6 +3,8 @@ import NewArraval from './NewArraval'
 import Pop from './Pop'
 import ProfilePage from './ProfilePage'
 import Topselling from './Topselling'
+import Dresspage from './Dresspage'
+import CustomerReview from './CustomerReview'
 
 function Homepage() {
   return (
@@ -12,6 +14,8 @@ function Homepage() {
       <ProfilePage/>
       <NewArraval/>
       <Topselling/>
+      <Dresspage/>
+      <CustomerReview/>
     </div>
   )
 }

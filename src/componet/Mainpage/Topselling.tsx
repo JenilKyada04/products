@@ -1,7 +1,7 @@
 import TopsellingCard from './TopsellingCard'
 function Topselling() {
   return (
-    <div>
+    <div className='max-w-360 mx-auto'>
       <div>
       <h1 className="font-integral mt-19 font-bold text-[48px] tracking-normal flex items-center justify-center text-center "
       >TOP SELLING</h1>

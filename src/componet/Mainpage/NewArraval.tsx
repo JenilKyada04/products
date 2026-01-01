@@ -2,8 +2,8 @@ import NewArravalCard from './NewArravalCard'
 
 function NewArraval() {
   return (
-    <div>
-      <h1 className="font-integral mt-19 font-bold text-[48px] tracking-normal flex items-center justify-center text-center "
+    <div className='max-w-360 mx-auto'>
+      <h1 className="font-integral mt-29 font-bold text-[48px] tracking-normal flex items-center justify-center text-center "
       >NEW ARRIVALS</h1>
       <NewArravalCard  />
 

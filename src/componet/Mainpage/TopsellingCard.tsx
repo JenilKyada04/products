@@ -32,7 +32,7 @@ const products = [
 ]
 
 function Topsellingcard() {
-    return (
+    return(
         <div className="mt-30 mb-30">
             <div className="flex flex-wrap gap-10 items-center justify-center">
                 {products.map((item) => (
