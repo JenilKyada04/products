@@ -13,15 +13,30 @@ const products = [
     rating: "/img/f1.png",
     price: "$240",
   },
+  {
+    id: 3,
+    title: "CHECKERED SHIRT",
+    image: "/img/t3.png",
+    rating: "/img/f1.png",
+    price: "$180",
+  },
+  {
+    id: 4,
+    title: "SLEEVE STRIPED T-SHIRT",
+    image: "/img/t4.png",
+    rating: "/img/f1.png",
+    price: "$130",
+  },
 ]
 
 function NewArrivalCard() {
   return (
-    <div className="flex flex-wrap gap-6">
+    <div className="mt-30 mb-30">
+    <div className="flex flex-wrap gap-10 items-center justify-center">
       {products.map((item) => (
         <div
           key={item.id}
-          className="w-1/4 sm:w-[48%] md:w-[23%] bg-white rounded-xl shadow-sm hover:shadow-md transition p-4">
+          className="w-1/5 sm:w-[48%] md:w-[23%] bg-white rounded-xl shadow-sm hover:shadow-md transition p-4">
           <img
             src={item.image}
             alt={item.title}
@@ -32,6 +47,7 @@ function NewArrivalCard() {
 
         </div>
       ))}
+    </div>
     </div>
   )
 }

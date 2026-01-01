@@ -45,12 +45,12 @@ function ProfilePage() {
     </div>
 
 
-            <div className="bg-black py-6 flex justify-center gap-20" >
+            <div className="bg-black py-6 flex justify-center gap-30" >
                 <img src="/img/versace.png" alt="Versace" className="h-10" />
-                <img src="/img/gucci.png" alt="Versace" className="h-10" />
                 <img src="/img/zara.png" alt="Versace" className="h-10" />
+                <img src="/img/gucci.png" alt="Versace" className="h-10" />
                 <img src="/img/calvinkelin.png" alt="Versace" className="h-10" />
-                <img src="/img/versace.png" alt="Versace" className="h-10" />
+                <img src="/img/prada.png" alt="Versace" className="h-10" />
             </div>
         </>
     );
