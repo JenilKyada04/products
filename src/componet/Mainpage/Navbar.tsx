@@ -32,7 +32,7 @@ function Navbar() {
               <input
                 type="text"
                 placeholder="Search for products..."
-                className="w-[420px] md:w-[360px] pl-12 pr-4 py-2 rounded-full bg-[#F2F0F1] focus:outline-none"
+                className="w-105 md:w-90 pl-12 pr-4 py-2 rounded-full bg-[#F2F0F1] focus:outline-none"
               />
             </div>
 
