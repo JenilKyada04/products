@@ -3,7 +3,7 @@ function ProfilePage() {
     return (
         <>
             <section className="light-gray">
-                <div className="flex items-center justify-center max-w-305 mx-auto">
+                <div className="flex items-center justify-center max-w-360 mx-auto">
 
                     <div className=" text-black lg:order-1">
                         <h1 className="text-4xl inter  lg:text-6xl font-extrabold leading-tight">

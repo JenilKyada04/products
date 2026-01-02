@@ -1,12 +1,20 @@
 
+import { BrowserRouter  , Route , Routes} from 'react-router-dom'
 import './app.css'
 import Homepage from './componet/Mainpage/Homepage'
+import Home2 from './componet/secoundPAge/Home2'
 
 function App() {
 
   return (
     <>
-        <Homepage />
+  <BrowserRouter>
+    <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/shop" element={<Home2 />} />
+      </Routes>
+  </BrowserRouter>
+
     </>
   )
 }
