@@ -27,7 +27,7 @@ function CustomerReview() {
             <div className="font-integral font-bold text-[48px] tracking-normal flex items-center justify-between text-center mt-30">
 
                 <h1>OUR HAPPY CUSTOMERS</h1>
-                
+
             </div>
 
             <div className="mt-10 flex flex-wrap gap-10 items-center justify-center mb-40 ">
