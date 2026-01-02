@@ -21,6 +21,8 @@ function Footer() {
 
             <Footercard/>
 
+            
+
         </>
     )
 }
