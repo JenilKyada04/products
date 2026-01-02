@@ -47,7 +47,7 @@ function Topsellingcard() {
                         <img src={item.rating} alt="rating" className="mt-2 w-20" />
 
                         <div className='flex justify-start items-center gap-3'>
-                            <h2 className="mt-2 text-lg font-bold text-gray-900"> {item.price} </h2>
+                            <h2 className="mt-2 text-lg inter text-gray-900"> {item.price} </h2>
                             <h2 className="bg-red-100 text-red-500 w-15 rounded-2xl items-center justify-center flex"> {item.Discount} </h2>
                         </div>
 
