@@ -1,4 +1,3 @@
-import Discount from './Discount'
 
 const products = [
     {
@@ -7,6 +6,7 @@ const products = [
         image: "/img/t5.png",
         rating: "/img/star/f5.png",
         price: "$212",
+        Discount: "-20%",
     },
     {
         id: 2,
@@ -48,7 +48,7 @@ function Topsellingcard() {
 
                         <div className='flex justify-start items-center gap-3'>
                             <h2 className="mt-2 text-lg font-bold text-gray-900"> {item.price} </h2>
-                            <Discount />
+                            <h2 className="bg-red-100 text-red-500 w-15 rounded-2xl items-center justify-center flex"> {item.Discount} </h2>
                         </div>
 
                     </div>

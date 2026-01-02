@@ -5,6 +5,7 @@ import ProfilePage from './ProfilePage'
 import Topselling from './Topselling'
 import Dresspage from './Dresspage'
 import CustomerReview from './CustomerReview'
+import Footer from './Footer'
 
 function Homepage() {
   return (
@@ -16,6 +17,7 @@ function Homepage() {
       <Topselling/>
       <Dresspage/>
       <CustomerReview/>
+      <Footer/>
     </div>
   )
 }

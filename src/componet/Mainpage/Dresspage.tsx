@@ -1,7 +1,7 @@
 function Dresspage() {
     return (
       <>
-      <div className="light-gray">
+      <div className="">
         <div className="bg-gray-100 max-w-360 mx-auto p-10 rounded-3xl">
   
           <div className="font-integral font-bold text-[48px] text-center">
