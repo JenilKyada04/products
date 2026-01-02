@@ -5,7 +5,7 @@ function Footer() {
         <>
             <div className="flex justify-between items-center bg-black p-6 rounded-4xl max-w-360 mx-auto text-white pl-15">
 
-                <div className="font-integral font-bold text-[48px] tracking-normal flex flex-col justify-start">
+                <div className="inter text-[48px] tracking-normal flex flex-col justify-start">
                     <div >STAY UPTO DATE ABOUT</div>
                     <div>OUR LATEST OFFERS</div>
                 </div>
@@ -20,8 +20,6 @@ function Footer() {
             </div>
 
             <Footercard/>
-
-            
 
         </>
     )

@@ -6,7 +6,7 @@ function ProfilePage() {
                 <div className="flex items-center justify-center max-w-305 mx-auto">
 
                     <div className=" text-black lg:order-1">
-                        <h1 className="text-4xl lg:text-6xl font-extrabold leading-tight">
+                        <h1 className="text-4xl inter  lg:text-6xl font-extrabold leading-tight">
                             FIND CLOTHES<br />
                             THAT MATCHES<br />
                             YOUR STYLE
@@ -53,11 +53,11 @@ function ProfilePage() {
 
             <div className="bg-black py-8">
                 <div className="max-w-360 mx-auto px-6 flex justify-center lg:justify-between items-center  gap-30 opacity-80">
-                    <img src="/img/versace.png" alt="Versace" className="h-6 lg:h-8 brightness-0 invert" />
-                    <img src="/img/zara.png" alt="Zara" className="h-6 lg:h-8 brightness-0 invert" />
-                    <img src="/img/gucci.png" alt="Gucci" className="h-6 lg:h-8 brightness-0 invert" />
-                    <img src="/img/calvinkelin.png" alt="Calvin Klein" className="h-6 lg:h-8 brightness-0 invert" />
-                    <img src="/img/prada.png" alt="Prada" className="h-6 lg:h-8 brightness-0 invert" />
+                    <img src="/img/versace.png" alt="Versace" />
+                    <img src="/img/zara.png" alt="Zara" />
+                    <img src="/img/gucci.png" alt="Gucci" />
+                    <img src="/img/calvinkelin.png" alt="Calvin Klein" />
+                    <img src="/img/prada.png" alt="Prada" />
                 </div>
             </div>  
 

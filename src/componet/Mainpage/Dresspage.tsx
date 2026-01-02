@@ -4,7 +4,7 @@ function Dresspage() {
       <div className="">
         <div className="bg-gray-100 max-w-360 mx-auto p-10 rounded-3xl">
   
-          <div className="font-integral font-bold text-[48px] text-center">
+          <div className="inter font-bold text-[48px] text-center">
             <h1>BROWSE BY DRESS STYLE</h1>
           </div>
   

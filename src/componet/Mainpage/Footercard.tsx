@@ -2,11 +2,11 @@ import Footersmcard from "./Footersmcard";
 
 function Footercard() {
   return (
-    <div className='bg-gray-200  p-10  '>
+    <div className='bg-gray-200 p-10  '>
       <div className="max-w-360 mx-auto flex justify-evenly items-center ">
 
         <div className="w-62 ">
-          <h1 className="font-integral font-bold text-[25px]">SHOP.CO</h1>
+          <h1 className="inter text-[25px]">SHOP.CO</h1>
           <p className="text-sm font-thin mt-5 mb-5">We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
           <div className="flex space-x-3 mt-5" >
             <img src="/img/logo/1.png" alt="" />

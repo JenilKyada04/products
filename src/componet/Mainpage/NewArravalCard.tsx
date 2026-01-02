@@ -1,14 +1,14 @@
 const products = [
   {
     id: 1,
-    title: "T-SHIRT WITH TAPE DETAILS",
+    title: "T-Shirt with Tape Details",
     image: "/img/t1.png",
     rating: "/img/star/f1.png",
     price: "$120",
   },
   {
     id: 2,
-    title: "SKINNY FIT JEANS",
+    title: "Skinny Fit Jeans",
     image: "/img/t2.png",
     rating: "/img/star/f2.png",
     price: "$240",
@@ -16,14 +16,14 @@ const products = [
   },
   {
     id: 3,
-    title: "CHECKERED SHIRT",
+    title: "Checkered Shirt",
     image: "/img/t3.png",
     rating: "/img/star/f3.png",
     price: "$180",
   },
   {
     id: 4,
-    title: "SLEEVE STRIPED T-SHIRT",
+    title: "Sleeve Striped T-Shirt",
     image: "/img/t4.png",
     rating: "/img/star/f4.png",
     price: "$130",
@@ -38,12 +38,12 @@ function NewArrivalCard() {
         {products.map((item) => (
           <div
             key={item.id}
-            className="w-1/5 sm:w-[48%] md:w-[23%] bg-white rounded-xl shadow-sm hover:shadow-md transition p-4">
+            className="w-1/5 sm:w-[48%] md:w-[23%]  transition ">
             <img
               src={item.image}
               alt={item.title}
               className="w-full h-80 object-cover rounded-lg" />
-            <h1 className="mt-4 text-sm font-semibold text-gray-900">  {item.title} </h1>
+            <h1 className="mt-4 inter text-gray-900">  {item.title} </h1>
             <img src={item.rating} alt="rating" className="mt-2 w-20" />
             <div className='flex justify-start items-center gap-3'>
               <h2 className="mt-2 text-lg font-bold text-gray-900"> {item.price} </h2>

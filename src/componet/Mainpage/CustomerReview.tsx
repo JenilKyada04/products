@@ -24,7 +24,7 @@ const review = [
 function CustomerReview() {
     return (
         <div className="mx-auto max-w-360 ">
-            <div className="font-integral font-bold text-[48px] tracking-normal flex items-center justify-between text-center mt-30">
+            <div className="inter text-[48px] tracking-normal flex items-center justify-between text-center mt-30">
 
                 <h1>OUR HAPPY CUSTOMERS</h1>
 

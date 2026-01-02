@@ -35,7 +35,7 @@ function Footersmcard() {
         <div className="mt-10 grid grid-cols-4 md:grid-cols-4 gap-25">
             {name.map((item, index) => (
                 <div key={index} className="flex flex-col gap-3">
-                    <h1 className="font-integral font-bold text-lg">{item.name}</h1>
+                    <h1 className="text-lg">{item.name}</h1>
                     <p className="text-sm font-thin hover:underline cursor-pointer">{item.p1}</p>
                     <p className="text-sm font-thin hover:underline cursor-pointer">{item.p2}</p>
                     <p className="text-sm font-thin hover:underline cursor-pointer">{item.p3}</p>
