@@ -8,23 +8,23 @@ function Dresspage() {
             BROWSE BY DRESS STYLE
           </h1>
 
-          <div className="mt-10 flex flex-col gap-4">
+          <div className="mt-10  flex flex-col gap-4">
 
-            <div className="grid grid-cols-12 gap-4">
+            <div className="grid md:grid-cols-12 gap-4">
 
-              <div className="col-span-4 relative">
+              <div className="md:col-span-4 relative">
                 <img
                   src="/img/stylee/s1.png"
                   alt="Casual"
                   className="w-full h-full object-cover rounded-xl"
                 />
-                
+
                 <h2 className="absolute top-6 left-8  text-black text-3xl font-bold">
                   Casual
                 </h2>
               </div>
 
-              <div className="col-span-8 relative">
+              <div className="md:col-span-8 relative">
                 <img
                   src="/img/stylee/s2.png"
                   alt="Formal"
@@ -36,9 +36,9 @@ function Dresspage() {
               </div>
             </div>
 
-            <div className="grid grid-cols-12 gap-4">
+            <div className="grid md:grid-cols-12 gap-4">
 
-              <div className="col-span-8 relative">
+              <div className="md:col-span-8 relative">
                 <img
                   src="/img/stylee/s3.png"
                   alt="Party"
@@ -49,7 +49,7 @@ function Dresspage() {
                 </h2>
               </div>
 
-              <div className="col-span-4 relative">
+              <div className="md:col-span-4 relative">
                 <img
                   src="/img/stylee/s4.png"
                   alt="Gym"
@@ -69,3 +69,4 @@ function Dresspage() {
 }
 
 export default Dresspage;
+

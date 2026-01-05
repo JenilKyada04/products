@@ -73,10 +73,10 @@ export default function Cart() {
     const total = subtotal - discount + DELIVERY_FEE;
 
     return (
-        <div className="max-w-300 mx-auto px-4 py-10 mb-35">
+        <div className="max-w-310 mx-auto px-4 py-10 mb-35">
             <h1 className="text-3xl font-black mb-8">YOUR CART</h1>
 
-            <div className="flex gap-4 justify-center">
+            <div className="md:flex gap-4 justify-center ">
 
                 <div className="flex-1 space-y-6 border border-gray-200 rounded-4xl p-6">
                     {cart.length === 0 ? (
@@ -134,7 +134,7 @@ export default function Cart() {
                     )}
                 </div>
 
-                <div className="border border-gray-200 rounded-4xl p-6 h-fit sticky top-24 w-105 shadow-sm">
+                <div className="border border-gray-200 rounded-4xl p-4 pt-5 pb-5 h-fit sticky top-24 md:w-105 shadow-sm">
                     <h2 className="text-xl inter2 mb-6">Order Summary</h2>
 
                     <div className="space-y-3 text-base">
@@ -172,7 +172,7 @@ export default function Cart() {
                             <input
                                 type="text"
                                 placeholder="Add promo code"
-                                className="flex-1 bg-transparent text-sm outline-none w-60"
+                                className="flex-1 bg-transparent text-sm outline-none md:w-60"
                             />
                         </div>
 

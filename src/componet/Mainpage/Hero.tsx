@@ -3,7 +3,7 @@ function ProfilePage() {
     return (
         <>
             <section className="light-gray">
-                <div className="flex items-center justify-center max-w-310 mx-auto md:p-0 p-4 ">
+                <div className="md:flex items-center justify-center w-full md:max-w-310 mx-auto md:p-0 p-4  ">
 
 
 
@@ -41,15 +41,17 @@ function ProfilePage() {
                         </div>
                     </div>
 
-                    <div className="flex-1 flex justify-end order-1 lg:order-2">
+                    <div className="md:flex-1 md:flex md:justify-end order-1 lg:order-2">
                         <div className="relative">
                             <img
                                 src="/img/ff1.png"
                                 alt="Fashion Model"
                                 className="w-full max-w-125 lg:max-w-150 h-162.5 object-cover"
                             />
-
                         </div>
+                            <img src="/img/star.png" className="absolute mr-130 mt-75" alt="" />
+                            <img src="/img/star.png" className="absolute mt-20 w-25" alt="" />
+
                     </div>
 
                 </div>

@@ -22,7 +22,7 @@ export default function CustomSeparator() {
     ];
 
     return (
-        <div className='mx-auto max-w-[1170px] mt-7'>
+        <div className='md:mx-auto md:max-w-303 mt-7 ml-3'>
 
             <Stack spacing={2}>
 

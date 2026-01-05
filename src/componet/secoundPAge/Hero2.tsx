@@ -28,14 +28,14 @@ export default function Hero2() {
 
             <Breadcrumb />
 
-            <section className="max-w-full mx-auto  py-10">
+            <section className="max-w-full mx-auto  md:py-10">
                 <div className="max-w-310 mx-auto px-6">
 
-                    <div className="bg-white rounded-xl  flex flex-row lg:flex-row gap-10">
+                    <div className="bg-white rounded-xl  md:flex md:flex-row lg:flex-row gap-10">
 
                         <div className="flex max-w-130 lg:w-1/2 gap-4">
 
-                            <div className="flex flex-col gap-5">
+                            <div className="flex flex-col gap-5 mt-5 md:m-0">
                                 {images.map((img, index) => (
                                     <button
                                         key={index}
@@ -67,7 +67,7 @@ export default function Hero2() {
 
                         <div className="max-w-130  gap-5">
 
-                            <h1 className="text-2xl lg:text-3xl font-extrabold inter">
+                            <h1 className="text-2xl lg:text-3xl font-extrabold inter mt-10 md:mt-0">
                                 ONE LIFE GRAPHIC T-SHIRT
                             </h1>
 

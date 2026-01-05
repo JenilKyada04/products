@@ -7,7 +7,7 @@ const products = [
         rating: "/img/star/f5.png",
         price: "$212",
         Discount: "-20%",
-        cut : "$242"
+        cut: "$242"
     },
     {
         id: 2,
@@ -15,7 +15,7 @@ const products = [
         image: "/img/tshirt/t2.png",
         rating: "/img/star/f6.png",
         price: "$145",
-    },  
+    },
     {
         id: 3,
         title: "Polo with Tipping Details",
@@ -29,42 +29,44 @@ const products = [
         image: "/img/tshirt/t4.png",
         rating: "/img/star/f8.png",
         price: "$210",
-        cut : "$150",
-        Discount : "-20%" 
+        cut: "$150",
+        Discount: "-20%"
     },
 ]
 
 function Shopcard() {
     return (
         <>
-    <div className=" max-w-312.5 mx-auto ">
-        <h1 className="font-integral mt-5 inter text-[48px] tracking-normal flex items-center justify-center text-center "
-        >YOU MIGHT ALSO LIKE</h1>
-        <div className="mt-10 mb-50">
-            <div className="flex flex-wrap gap-5 items-center justify-center">
-                {products.map((item) => (
-                    <div
-                        key={item.id}
-                        className="w-1/5 sm:w-[48%] md:w-[23%] rounded-xl transition ">
-                        <img
-                            src={item.image}
-                            alt={item.title}
-                            className="w-full h-80 object-cover rounded-lg" />
-                        <h1 className="mt-4  inter2 text-gray-900">  {item.title} </h1>
-                        <img src={item.rating} alt="rating" className="mt-2 w-20" />
+             <div className="mt-10 mb-15">
+          <div className="flex flex-wrap gap-5 items-center justify-center mb-40">
+            {products.map((item) => (
+              <div key={item.id} className="w-72  ">
+                <div className="light-gray rounded-2xl overflow-hidden">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full h-80 object-cover"
+                  />
+                </div>
 
-                        <div className='flex justify-start items-center gap-3'>
-                            <h2 className="mt-2 text-lg inter2 text-gray-900"> {item.price}
-                                 <span className="text-gray-400 line-through inter2 pl-2">{item.cut}</span>
-                                 </h2>
-                            <h2 className="bg-red-100 text-red-500 w-15 rounded-2xl items-center justify-center flex"> {item.Discount} </h2>
-                        </div>
+                <h1 className="mt-4 inter text-xl text-gray-900 font-bold">{item.title}</h1>
+                <img src={item.rating} alt="rating" className="mt-2 w-24" />
 
-                    </div>
-                ))}
-            </div>
+                <div className="flex justify-start items-center gap-3">
+                  <h2 className="mt-2 text-2xl inter2 text-gray-900 font-bold">
+                    {item.price}
+                    <span className="text-gray-400 line-through inter2 pl-2">{item.cut}</span>
+                  </h2>
+                  {item.Discount && (
+                    <h2 className="mt-2 bg-red-100 text-red-500 px-3 py-1 rounded-full text-xs font-medium">
+                      {item.Discount}
+                    </h2>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
-    </div>
         </>
     )
 }

@@ -45,9 +45,9 @@ const reviews = [
 const Reviews = () => {
     return (
         <div className="w-full max-w-6xl mx-auto px-4 py-10">
-            <div className="flex justify-evenly items-center gap-8 border-b inter1 text-gray-500">
+            <div className="md:flex md:justify-evenly md:items-center gap-8 border-b inter1 text-gray-500">
                 <button className="pb-3">Product Details</button>
-                <button className="pb-2 px-25 border-b-2 border-black text-black">
+                <button className="pb-2 md:px-25 px-7 border-b-2 border-black text-black">
                     Rating & Reviews
                 </button>
                 <button className="pb-3">FAQs</button>
@@ -62,7 +62,7 @@ const Reviews = () => {
                     <button className="px-2 py-1.5 light-gray border rounded-full ">
                         <img src="/img/logo/logo1.png" className="w-4" alt="" />
                     </button>
-                    <button className=" flex items-center px-6 py-1.5 light-gray border rounded-full text-sm">
+                    <button className="flex items-center px-6 py-1.5 light-gray border rounded-full text-sm">
                         <div>
                             Latest
                         </div>
@@ -76,7 +76,7 @@ const Reviews = () => {
                 </div>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-2 gap-6 mt-6">
+            <div className="grid md:grid-cols-2  gap-6 mt-6">
                 {reviews.map((review, index) => (
                     <div
                         key={index}

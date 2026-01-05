@@ -32,9 +32,10 @@ const name = [{
 function Footersmcard() {
   return (
     <div>
-        <div className="mt-10 grid grid-cols-4 md:grid-cols-4 gap-25">
+        <div className="mt-10 grid  md:grid-cols-4 gap-10 md:ml-30">
+
             {name.map((item, index) => (
-                <div key={index} className="flex flex-col gap-3">
+                <div key={index} className="md:flex md:flex-col gap-3">
                     <h1 className="text-lg tracking-widest">{item.name}</h1>
                     <p className="text-sm font-thin hover:underline cursor-pointer">{item.p1}</p>
                     <p className="text-sm font-thin hover:underline cursor-pointer">{item.p2}</p>
