@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { MdOutlinePerson2, MdMenu, MdClose } from "react-icons/md"; // Added Menu icons
 import { FiSearch } from "react-icons/fi";
-import { IoIosArrowDown } from "react-icons/io";
 import ShoppingCart from "./ShoppingCart";
 import { Link } from "react-router-dom";
 import Drop from "./Drop";
