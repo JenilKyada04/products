@@ -40,7 +40,7 @@ function CustomerReview() {
 
             <div className="mt-10 flex flex-wrap gap-5 items-center justify-center mb-40 p-2">
                 {review.map((item) => (
-                    <div key={item.id} className="md:w-90 bg-white rounded-3xl md:p-5 p-2  gap-2 md:px-10 flex flex-col border-gray-200 border-2">
+                    <div key={item.id} className="md:w-98 bg-white rounded-3xl md:p-5 p-2  gap-2 md:px-10 flex flex-col border-gray-200 border-2">
                         <div className="flex flex-col  gap-4">
                             <img src={item.image} alt={item.title} className="w-30 h-full" />
                             <div className="flex items-center justify-start gap-1">
