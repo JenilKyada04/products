@@ -17,25 +17,25 @@ const reviews = [
     {
         name: "Ethan R.",
         rating: 4,
-        text: "\"This t-shirt is a must-have for anyone who appreciates good design. The minimalist yet stylish pattern caught my eye, and the fit is perfect. I can see the designer’s touch in every aspect of this shirt.\"",
+        text: "\"This t-shirt is a must-have for anyone who appreciates good design. The minimalist yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.\"",
         date: "Posted on August 16, 2023",
     },
     {
         name: "Olivia B.",
         rating: 4,
-        text: "\"As a UI/UX enthusiast, I value simplicity and functionality. This t-shirt not only represents those principles but also feels great to wear. It’s evident that the designer poured their creativity into making this t-shirt stand out.\"",
+        text: "\"As a UI/UX enthusiast, I value simplicity and functionality. This t-shirt not only represents those principles but also feels great to wear. It's evident that the designer poured their creativity into making this t-shirt stand out.\"",
         date: "Posted on August 17, 2023",
     },
     {
         name: "Liam K.",
         rating: 4,
-        text: "\"This t-shirt is a fusion of comfort and creativity. The fabric is soft, and the design speaks volumes about the designer’s skill. It’s less wearing a piece of art that reflects my passion for both design and fashion.\"",
+        text: "\"This t-shirt is a fusion of comfort and creativity. The fabric is soft, and the design speaks volumes about the designer's skill. It's less wearing a piece of art that reflects my passion for both design and fashion.\"",
         date: "Posted on August 18, 2023",
     },
     {
         name: "Ava H.",
         rating: 5,
-        text: "\"I’m not just wearing a t-shirt; I’m wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.\"",
+        text: "\"I'm not just wearing a t-shirt; I  m wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.\"",
         date: "Posted on August 19, 2023",
     },
 ];
@@ -62,7 +62,7 @@ const Reviews = () => {
                     <button className="px-2 py-1.5 light-gray border rounded-full ">
                         <img src="/img/logo/logo1.png" className="w-4" alt="" />
                     </button>
-                    <button className="flex items-center px-6 py-1.5 light-gray border rounded-full text-sm">
+                    <button className="lg md:flex items-center px-6 py-1.5 light-gray border rounded-full text-sm">
                         <div>
                             Latest
                         </div>
@@ -76,7 +76,7 @@ const Reviews = () => {
                 </div>
             </div>
 
-            <div className="grid md:grid-cols-2  gap-6 mt-6">
+            <div className="grid md:grid-cols-2 gap-4 mt-6">
                 {reviews.map((review, index) => (
                     <div
                         key={index}
@@ -89,7 +89,7 @@ const Reviews = () => {
 
                         <div className=" mt-3 flex items-center justify-start gap-1">
                             <h3 className="inter2">{review.name}</h3>
-                            <img src="/img/greentick.png"  alt="" />
+                            <img src="/img/greentick.png" alt="" />
                         </div>
 
 
@@ -97,7 +97,7 @@ const Reviews = () => {
                             {review.text}
                         </p>
 
-                        <p className="mt-4 text-xs inter1 text-gray-400">{review.date}</p>
+                        <p className="mt-4 text-sm inter2  text-gray-400">{review.date}</p>
                     </div>
                 ))}
             </div>

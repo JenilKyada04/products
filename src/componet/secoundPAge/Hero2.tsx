@@ -33,9 +33,9 @@ export default function Hero2() {
 
                     <div className="bg-white rounded-xl  md:flex md:flex-row lg:flex-row gap-10">
 
-                        <div className="flex max-w-130 lg:w-1/2 gap-4">
+                        <div className="md:flex  max-w-130 lg:w-1/2 gap-4">
 
-                            <div className="flex flex-col gap-5 mt-5 md:m-0">
+                            <div className="flex md:flex-col gap-5 mt-5 md:m-0">
                                 {images.map((img, index) => (
                                     <button
                                         key={index}
@@ -54,7 +54,7 @@ export default function Hero2() {
                                 ))}
                             </div>
 
-                            <div className="flex-1 rounded-xl flex items-center justify-center">
+                            <div className="flex-1 rounded-xlflex items-center justify-center">
                                 <img
                                     src={activeImage}
                                     alt="Product"

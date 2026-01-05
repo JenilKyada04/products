@@ -22,11 +22,11 @@ function Footercard() {
 
       <hr className="m-5  border-gray-300" />
 
-      <div className="flex justify-between items-center max-w-300 mx-auto">
+      <div className="md:flex justify-between items-center max-w-300 mx-auto">
         <div>
           <h1 className="font-thin text-sm">Shop.co © 2000-2023, All Rights Reserved</h1>
         </div>
-        <div className="flex items-center ">
+        <div className="flex items-center mt-5 md:m-0 ">
           <img src="/img/payment/p1.png" className="w-13" alt="" />
           <img src="/img/payment/p2.png" className="w-13" alt="" />
           <img src="/img/payment/p3.png" className="w-13" alt="" />

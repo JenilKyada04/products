@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { FiTrash2 } from "react-icons/fi";
 import { FaArrowRight } from "react-icons/fa6";
+import { FiPlus } from "react-icons/fi";
+import { RiSubtractFill } from "react-icons/ri";
 
-// Define a TypeScript interface for a single item in the cart
 interface CartItem {
     id: number;
     name: string;
@@ -13,7 +14,6 @@ interface CartItem {
     image: string;
 }
 
-// Provide the missing initial data
 const initialCart: CartItem[] = [
     {
         id: 1,
@@ -76,7 +76,7 @@ export default function Cart() {
         <div className="max-w-310 mx-auto px-4 py-10 mb-35">
             <h1 className="text-3xl font-black mb-8">YOUR CART</h1>
 
-            <div className="md:flex gap-4 justify-center ">
+            <div className="md:flex gap-4 md:gap-4 justify-center ">
 
                 <div className="flex-1 space-y-6 border border-gray-200 rounded-4xl p-6">
                     {cart.length === 0 ? (
@@ -102,7 +102,7 @@ export default function Cart() {
                                     </div>
                                 </div>
 
-                                <div className="flex flex-col items-end gap-4">
+                                <div className="flex flex-col items-end justify-between gap-4">
                                     <button
                                         onClick={() => removeItem(item.id)}
                                         className="text-red-500 hover:text-red-600"
@@ -110,21 +110,21 @@ export default function Cart() {
                                     >
                                         <FiTrash2 size={18} />
                                     </button>
-                                    <div className="flex items-center justify-between bg-gray-100 rounded-full px-3 py-1 w-[30">
+                                    <div className="flex items-center mt-7 justify-between bg-gray-100 rounded-4xl px-3 py-1 w-[30">
 
                                         <button
                                             onClick={() => updateQuantity(item.id, -1)}
-                                            className="px-2 text-lg font-semibold text-gray-600 hover:text-black"
+                                            className="px-2 text-lg cursor-pointer font-semibold text-gray-600 hover:text-black"
                                             disabled={item.quantity <= 1}
                                         >
-                                            −
+                                            <RiSubtractFill/>
                                         </button>
                                         <span className="px-2 font-semibold">{item.quantity}</span>
                                         <button
                                             onClick={() => updateQuantity(item.id, 1)}
-                                            className="px-2 text-lg font-semibold text-gray-600 hover:text-black"
+                                            className="px-2 text-lg cursor-pointer font-semibold text-gray-600 hover:text-black"
                                         >
-                                            +
+                                            <FiPlus />
                                         </button>
                                     </div>
 
@@ -172,16 +172,16 @@ export default function Cart() {
                             <input
                                 type="text"
                                 placeholder="Add promo code"
-                                className="flex-1 bg-transparent text-sm outline-none md:w-60"
+                                className="flex-1 bg-transparent text-sm outline-none w-40 md:w-60"
                             />
                         </div>
 
-                        <button className="bg-black text-white px-6 rounded-full text-sm font-semibold  transition duration-150">
+                        <button className="bg-black cursor-pointer text-white px-6 rounded-full text-sm font-semibold  transition duration-150">
                             Apply
                         </button>
                     </div>
 
-                    <button className="w-full bg-black text-white rounded-full py-3 mt-6 inter1   transition duration-150">
+                    <button className="w-full bg-black cursor-pointer text-white rounded-full py-3 mt-6 inter1   transition duration-150">
                         <div className="flex justify-center	 items-center">
                             <div>
                                 Go to Checkout
