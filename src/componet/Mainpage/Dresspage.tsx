@@ -1,58 +1,71 @@
 function Dresspage() {
-    return (
-      <>
-      <div className="">
-        <div className="bg-gray-100 max-w-360 mx-auto p-10 rounded-3xl">
-  
-          <div className="inter font-bold text-[48px] text-center">
-            <h1>BROWSE BY DRESS STYLE</h1>
-          </div>
-  
-          <div className="mt-10 flex flex-col gap-4 max-w-[1440]">
-  
+  return (
+    <>
+      <div>
+        <div className="bg-gray-100 max-w-310 mx-auto p-10 rounded-3xl">
+
+          <h1 className="inter font-bold text-[48px] text-center">
+            BROWSE BY DRESS STYLE
+          </h1>
+
+          <div className="mt-10 flex flex-col gap-4">
+
             <div className="grid grid-cols-12 gap-4">
-              <div className="col-span-4">
+
+              <div className="col-span-4 relative">
                 <img
                   src="/img/stylee/s1.png"
-                  alt="Style 1"
+                  alt="Casual"
                   className="w-full h-full object-cover rounded-xl"
                 />
+                
+                <h2 className="absolute top-6 left-8  text-black text-3xl font-bold">
+                  Casual
+                </h2>
               </div>
-              <div className="col-span-8">
+
+              <div className="col-span-8 relative">
                 <img
                   src="/img/stylee/s2.png"
-                  alt="Style 2"
+                  alt="Formal"
                   className="w-full h-full object-cover rounded-xl"
                 />
+                <h2 className="absolute top-6 left-8  text-black text-3xl font-bold">
+                  Formal
+                </h2>
               </div>
             </div>
-  
+
             <div className="grid grid-cols-12 gap-4">
-              <div className="col-span-8">
+
+              <div className="col-span-8 relative">
                 <img
                   src="/img/stylee/s3.png"
-                  alt="Style 3"
+                  alt="Party"
                   className="w-full h-full object-cover rounded-xl"
                 />
+                <h2 className="absolute top-6 left-8 text-black text-3xl font-bold">
+                  Party
+                </h2>
               </div>
-              <div className="col-span-4">
+
+              <div className="col-span-4 relative">
                 <img
                   src="/img/stylee/s4.png"
-                  alt="Style 4"
+                  alt="Gym"
                   className="w-full h-full object-cover rounded-xl"
                 />
+                <h2 className="absolute top-6 left-8 text-black   text-3xl font-bold">
+                  Gym
+                </h2>
               </div>
             </div>
-  
+
           </div>
-
-
-          
         </div>
-        </div>
-      </>
-    );
-  }
-  
-  export default Dresspage;
-  
+      </div>
+    </>
+  );
+}
+
+export default Dresspage;

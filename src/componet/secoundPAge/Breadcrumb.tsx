@@ -33,7 +33,7 @@ export default function CustomSeparator() {
     ];
 
     return (
-        <div className='mx-auto max-w-344 mt-7'>
+        <div className='mx-auto max-w-310 mt-7'>
 
             <Stack spacing={2}>
 

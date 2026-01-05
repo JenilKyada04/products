@@ -3,15 +3,20 @@ import { BrowserRouter  , Route , Routes} from 'react-router-dom'
 import './app.css'
 import Homepage from './componet/Mainpage/Homepage'
 import Home2 from './componet/secoundPAge/Home2'
+import ScrollToTop from './componet/Mainpage/ScrollToTop'
+import Cart from './componet/cart/cart'
 
 function App() {
 
   return (
     <>
   <BrowserRouter>
+  <ScrollToTop />
     <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/shop" element={<Home2 />} />
+        <Route path="/newarrivals" element={<Homepage />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
   </BrowserRouter>
 

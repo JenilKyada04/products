@@ -14,6 +14,25 @@
   font-style: normal;
 }
 
+.inter1 {
+  font-family:  sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.inter2 {
+  font-family:  sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: bold;
+}
+
+.lg{
+  @media (width <= 40rem ) {
+      display: none;
+  }
+}
+
 @theme inline {
     --radius-sm: calc(var(--radius) - 4px);
     --radius-md: calc(var(--radius) - 2px);

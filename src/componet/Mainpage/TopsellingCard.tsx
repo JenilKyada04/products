@@ -1,4 +1,6 @@
 
+import { Link } from "react-router-dom"
+
 const products = [
     {
         id: 1,
@@ -7,6 +9,7 @@ const products = [
         rating: "/img/star/f5.png",
         price: "$212",
         Discount: "-20%",
+        cut: "$232",
     },
     {
         id: 2,
@@ -32,29 +35,34 @@ const products = [
 ]
 
 function Topsellingcard() {
-    return(
-        <div className="mt-30 mb-30 ">
-            <div className="flex flex-wrap gap-10 items-center justify-center">
-                {products.map((item) => (
-                    <div
-                        key={item.id}
-                        className="w-1/5 sm:w-[48%] md:w-[23%] rounded-xl transition ">
-                        <img
-                            src={item.image}
-                            alt={item.title}
-                            className="w-full h-80 object-cover rounded-lg" />
-                        <h1 className="mt-4  inter text-gray-900">  {item.title} </h1>
-                        <img src={item.rating} alt="rating" className="mt-2 w-20" />
+    return (
+        <>
+            <Link to={"/shop"}>
+                <div className="mt-10 mb-10 ">
+                    <div className="flex flex-wrap gap-10 items-center justify-center">
+                        {products.map((item) => (
+                            <div
+                                key={item.id}
+                                className="w-1/5 sm:w-[48%] md:w-[23%] rounded-xl transition ">
+                                <img
+                                    src={item.image}
+                                    alt={item.title}
+                                    className="w-full h-80 object-cover rounded-lg" />
+                                <h1 className="mt-4  inter text-gray-900">  {item.title} </h1>
+                                <img src={item.rating} alt="rating" className="mt-2 w-20" />
 
-                        <div className='flex justify-start items-center gap-3'>
-                            <h2 className="mt-2 text-lg inter text-gray-900"> {item.price} </h2>
-                            <h2 className="bg-red-100 text-red-500 w-15 rounded-2xl items-center justify-center flex"> {item.Discount} </h2>
-                        </div>
+                                <div className='flex justify-start items-center gap-3'>
+                                    <h2 className="mt-2 text-lg inter2 text-black"> {item.price}
+                                        <span className="text-gray-400 line-through inter2 pl-2">{item.cut}</span>
+                                    </h2>
+                                    <h2 className="bg-red-100 text-red-500 w-15 rounded-2xl items-center justify-center flex"> {item.Discount} </h2>
+                                </div>
 
+                            </div>
+                        ))}
                     </div>
-                ))}
-            </div>
-        </div>
+                </div>
+            </Link></>
     )
 }
 

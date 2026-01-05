@@ -1,7 +1,7 @@
 import Navbar from './Navbar'
 import NewArraval from './NewArraval'
 import Pop from './Pop'
-import ProfilePage from './Hero'
+import Hero from './Hero'
 import Topselling from './Topselling'
 import Dresspage from './Dresspage'
 import CustomerReview from './CustomerReview'
@@ -12,7 +12,7 @@ function Homepage() {
     <div>
       <Pop />
       <Navbar/>
-      <ProfilePage/>
+      <Hero/>
       <NewArraval/>
       <Topselling/>
       <Dresspage/>
