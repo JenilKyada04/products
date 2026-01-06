@@ -1,9 +1,10 @@
 import { useState } from "react";
-import { MdOutlinePerson2, MdMenu, MdClose } from "react-icons/md"; // Added Menu icons
+import { MdOutlinePerson2, MdMenu, MdClose } from "react-icons/md";
 import { FiSearch } from "react-icons/fi";
 import ShoppingCart from "./ShoppingCart";
 import { Link } from "react-router-dom";
-import Drop from "./Drop";
+import { IoIosArrowDown } from "react-icons/io";
+// import Drop from "./Drop";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,16 +29,20 @@ function Navbar() {
 
           <nav className="lg">
             <ul className="flex items-center space-x-8">
+                <Link to="/shop" className="text-gray-600 hover:text-gray-900">
               <li className="flex items-center gap-1">
-                <Drop />
+                  Shop
+                  <IoIosArrowDown />
+                {/* <Drop /> */}
               </li>
+                </Link>
               <li><a href="#" className="text-gray-600 hover:text-gray-900">On Sale</a></li>
               <li><Link to="/newarrivals" className="text-gray-600 hover:text-gray-900">New Arrivals</Link></li>
               <li><a href="#" className="text-gray-600 hover:text-gray-900">Brands</a></li>
             </ul>
           </nav>
 
-          <div className="lg md:flex relative flex-1 max-w-md mx-8">
+          <div className="lg md:flex relative flex-1 max-w-md mx-8 focus-within:ring-2 focus-within:ring-black rounded-full">
             <FiSearch className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500" />
             <input
               type="text"
@@ -50,7 +55,9 @@ function Navbar() {
             <FiSearch className="md:hidden text-2xl text-gray-600" />
 
             <Link to={"/cart"}>
+              <button className="text-gray-600 mt-1 hover:text-gray-900">
               <ShoppingCart />
+            </button>
             </Link>
 
             <button className="text-gray-600 hover:text-gray-900">
@@ -61,7 +68,7 @@ function Navbar() {
 
         <div className={`${isOpen ? "block" : "hidden"} lg:hidden pb-6 transition-all duration-300`}>
           <ul className="flex flex-col space-y-4">
-            <li><Link to="/shop" className="block text-gray-600" onClick={() => setIsOpen(false)}>Shop  </Link></li>
+            <li><Link to="/shop" className="block text-gray-600" onClick={() => setIsOpen(false)}>Shop</Link></li>
             <li><a href="#" className="block text-gray-600">On Sale</a></li>
             <li><Link to="/newarrivals" className="block text-gray-600" onClick={() => setIsOpen(false)}>New Arrivals</Link></li>
             <li><a href="#" className="block text-gray-600">Brands</a></li>

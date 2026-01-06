@@ -38,7 +38,7 @@ const initialCart: CartItem[] = [
         name: "Skinny Fit Jeans",
         size: "Large",
         color: "Blue",
-        price: 240,
+        price: 240, 
         quantity: 1,
         image: "/img/tshirt/t7.png",
     },

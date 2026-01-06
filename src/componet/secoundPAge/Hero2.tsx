@@ -24,17 +24,11 @@ export default function Hero2() {
 
     return (
         <>
-
-
             <Breadcrumb />
-
             <section className="max-w-full mx-auto  md:py-10">
                 <div className="max-w-310 mx-auto px-6">
-
                     <div className="bg-white rounded-xl  md:flex md:flex-row lg:flex-row gap-10">
-
                         <div className="md:flex  max-w-130 lg:w-1/2 gap-4">
-
                             <div className="flex md:flex-col gap-5 mt-5 md:m-0">
                                 {images.map((img, index) => (
                                     <button
@@ -89,14 +83,14 @@ export default function Hero2() {
 
                             <hr className="mt-3 mb-3" />
 
-                            <div>
+                            <div className="">
                                 <p className="font-light mb-2 text-gray-500">Select Colors</p>
                                 <div className="flex gap-3">
                                     {colors.map((color, index) => (
                                         <button
                                             key={index}
                                             style={{ backgroundColor: color.value }}
-                                            className="w-7 h-7 rounded-full border border-gray-300"
+                                            className="w-7 h-7 rounded-full cursor-pointer border border-gray-300 hover:border-black transition"
                                         />
                                     ))}
                                 </div>
@@ -111,7 +105,7 @@ export default function Hero2() {
                                         <button
                                             key={size}
                                             onClick={() => setActiveSize(size)}
-                                            className={`px-4 py-2 rounded-full text-sm border transition ${activeSize === size
+                                            className={`px-4 py-2 rounded-full text-sm border cursor-pointer transition ${activeSize === size
                                                 ? "bg-black text-white"
                                                 : "bg-gray-100 text-gray-700"
                                                 }`}
@@ -129,21 +123,21 @@ export default function Hero2() {
                                 <div className="flex items-center justify-between bg-[#F0F0F0] rounded-full px-5 py-3 w-28 sm:w-37.5 shrink-0">
                                     <button
                                         onClick={() => setQuantity(Math.max(1, quantity - 1))}
-                                        className="text-2xl font-light hover:text-gray-500 transition"
+                                        className=" cursor-pointer text-2xl font-light hover:text-gray-500 transition"
                                     >
                                         −
                                     </button>
                                     <span className="font-medium text-lg">{quantity}</span>
                                     <button
                                         onClick={() => setQuantity(quantity + 1)}
-                                        className="text-2xl font-light hover:text-gray-500 transition"
+                                        className=" cursor-pointer text-2xl font-light hover:text-gray-500 transition"
                                     >
                                         +
                                     </button>
                                 </div>
 
                                 <Link to="/cart" className="flex-1">
-                                    <button className="w-full bg-black text-white py-3 sm:py-4 rounded-full font-medium  transition-all active:scale-95">
+                                    <button className="w-full cursor-pointer bg-black text-white py-3 sm:py-4 rounded-full font-medium  transition-all active:scale-95">
                                         Add to Cart
                                     </button>
                                 </Link>

@@ -31,7 +31,7 @@ function CustomerReview() {
 
                 <h1>OUR HAPPY CUSTOMERS</h1>
 
-                <div className="  flex items-center gap-5 text-xl text-gray-800 cursor-pointer">
+                <div className=" lg  flex items-center gap-5 text-xl text-gray-800 cursor-pointer">
                     <span><IoMdArrowRoundBack/></span>
                     <span><IoMdArrowRoundForward/></span>
                 </div>

@@ -15,7 +15,7 @@ const products = [
     rating: "/img/star/f2.png",
     price: "$240",
     Discount: "-20%",
-    cut : "$260"
+    cut: "$260"
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ const products = [
     rating: "/img/star/f4.png",
     price: "$130",
     Discount: "-30%",
-     cut : "$160"
+    cut: "$160"
   },
 ]
 
@@ -43,20 +43,22 @@ function NewArrivalCard() {
           <div className="flex flex-wrap gap-5 items-center justify-center">
             {products.map((item) => (
               <div key={item.id} className="w-72  ">
-                <div className="light-gray rounded-2xl overflow-hidden">
+               
+                <div className="overflow-hidden rounded-lg">
                   <img
                     src={item.image}
                     alt={item.title}
-                    className="w-full h-80 object-cover"
+                    className=" w-full h-80 object-cover transition-transform duration-300 inter ease-in-out hover:scale-125"
                   />
                 </div>
 
-                <h1 className="mt-4 inter text-xl text-gray-900 font-bold">{item.title}</h1>
-                <img src={item.rating} alt="rating" className="mt-2 w-24" />
+
+                <h1 className="mt-4 inter2 text-xl text-gray-900 font-bold">{item.title}</h1>
+                <img src={item.rating} alt="rating" className="mt-2 w-30" />
 
                 <div className="flex justify-start items-center gap-3">
                   <h2 className="mt-2 text-2xl inter2 text-gray-900 font-bold">
-                    {item.price} 
+                    {item.price}
                     <span className="text-gray-400 line-through inter2 pl-2">{item.cut}</span>
                   </h2>
                   {item.Discount && (

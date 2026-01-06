@@ -16,14 +16,14 @@ function Footer() {
 
           <div className="md:flex md:flex-col gap-2 ">
             <div className="relative">
-              <TfiEmail className="absolute left-4 mt-1 top-1/2 -translate-y-1/2 text-gray-500" />
+              <TfiEmail className="absolute left-4 mt-1.75 top-1/2 -translate-y-1/2 text-gray-500" />
               <input
                 type="text"
                 className="bg-white w-full md:w-87.5 h-12 mt-3 text-black rounded-3xl pl-10 focus:outline-none"
                 placeholder="Enter your email address"
               />
             </div>
-            <button className="bg-white mt-3 text-black h-12 w-full font-bold rounded-3xl">
+            <button className="bg-white mt-3 cursor-pointer  text-black h-12 w-full font-bold rounded-3xl hover:bg-gray-300 transition">
               Subscribe to Newsletter
             </button>
           </div>

@@ -8,8 +8,8 @@ function Footercard() {
         <div className="w-62 ">
           <h1 className="inter text-[25px] mt-10">SHOP.CO</h1>
           <p className="text-sm font-thin mt-5 mb-5">We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
-          <div className="flex space-x-3 mt-5" >
-            <img src="/img/logo/1.png" alt="" />
+          <div className="flex space-x-3 mt-5  cursor-pointer" >
+            <img src="/img/logo/1.png"  alt="" />
             <img src="/img/logo/2.png" alt="" />
             <img src="/img/logo/3.png" alt="" />
             <img src="/img/logo/4.png" alt="" />

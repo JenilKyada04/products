@@ -8,11 +8,11 @@ function Dresspage() {
             BROWSE BY DRESS STYLE
           </h1>
 
-          <div className="mt-10  flex flex-col gap-4">
+          <div className="mt-10  flex flex-col gap-4 ">
 
             <div className="grid md:grid-cols-12 gap-4">
 
-              <div className="md:col-span-4 relative">
+              <div className="md:col-span-4 relative ">
                 <img
                   src="/img/stylee/s1.png"
                   alt="Casual"

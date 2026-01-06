@@ -19,7 +19,7 @@ function ProfilePage() {
                             designed to bring out your individuality and cater to your sense of style.
                         </p>
 
-                        <button className="sm:w-auto bg-black text-white px-12 py-4 rounded-full font-medium hover:bg-gray-800 transition-all">
+                        <button className="sm:w-auto cursor-pointer bg-black text-white px-12 py-4 rounded-full font-medium hover:bg-gray-800 transition-all">
                             Shop Now
                         </button>
 

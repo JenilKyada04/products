@@ -41,16 +41,16 @@ function Shopcard() {
           <div className="flex flex-wrap gap-5 items-center justify-center mb-40">
             {products.map((item) => (
               <div key={item.id} className="w-72  ">
-                <div className="light-gray rounded-2xl overflow-hidden">
+                 <div className="overflow-hidden rounded-lg">
                   <img
                     src={item.image}
                     alt={item.title}
-                    className="w-full h-80 object-cover"
+                    className=" w-full h-80 object-cover transition-transform duration-300 ease-in-out hover:scale-125"
                   />
                 </div>
 
-                <h1 className="mt-4 inter text-xl text-gray-900 font-bold">{item.title}</h1>
-                <img src={item.rating} alt="rating" className="mt-2 w-24" />
+                <h1 className="mt-4 inter2 text-xl text-gray-900 font-bold">{item.title}</h1>
+                <img src={item.rating} alt="rating" className="mt-2 w-25" />
 
                 <div className="flex justify-start items-center gap-3">
                   <h2 className="mt-2 text-2xl inter2 text-gray-900 font-bold">

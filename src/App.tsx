@@ -27,5 +27,5 @@ function App() {
 export default App
 
 
-
 // https://www.figma.com/design/VDpk7xCuR3SjtVh9qOz32k/E-commerce-Website-Template--Freebie---Community-?node-id=20-2&p=f
+// https://www.figma.com/file/VDpk7xCuR3SjtVh9qOz32k/E-commerce-Website-Template--Freebie---Community-?node-id=20-2&t=JYJ1k3b0b0mJlYk2-0
